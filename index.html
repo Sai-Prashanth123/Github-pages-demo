@@ -37,12 +37,12 @@
     </style>
 
     <script>
-        const tenantId = "YOUR_TENANT_ID"; // Replace with your Microsoft Entra ID Tenant ID
-        const clientId = "YOUR_CLIENT_ID"; // Replace with your App Registration Client ID
-        const redirectUri = "https://yourdomain.com/welcome.html"; // Replace with your Redirect URI
+        const tenantId = "af7dccf8-6f3e-4c0c-b31d-361aefa99c0f"; // Microsoft Entra ID Tenant ID
+        const clientId = "0533a5b9-34ba-4cbf-9abe-1753c4aeca5b"; // App Registration Client ID
+        const redirectUri = "https://sai-prashanth123.github.io/Github-pages-demo/"; // Redirect URI
 
         function login(isSignUp = false) {
-            const policy = isSignUp ? "b2c_1a_signup" : "b2c_1a_signin"; // Update with your user flow policy names
+            const policy = isSignUp ? "b2c_1a_signup" : "b2c_1a_signin"; // Update with your user flow policy names if needed
             const authUrl = `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/authorize?
                 client_id=${clientId}
                 &response_type=token
